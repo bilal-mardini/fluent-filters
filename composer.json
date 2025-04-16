@@ -1,0 +1,45 @@
+{
+  "name": "bilalmardini/fluent-filters",
+  "description": "A package to easily add filters to Laravel queries.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bilal Mardini",
+      "email": "bilal.mardini1999@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BilalMardini\\FluentFilters\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BilalMardini\\FluentFilters\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/database": "^8.0",
+    "illuminate/support": "~5.6.34|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0",
+    "illuminate/console": "~5.6.34|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "BilalMardini\\FluentFilters\\Providers\\QueryFilterServiceProvider"
+      ]
+    }
+  }
+}
