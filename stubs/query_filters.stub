@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Filters;
+
+use FluentFilters\Filters\FilterEngine;
+use Illuminate\Database\Eloquent\Builder;
+
+class DummyClassNameFilter extends FilterEngine
+{
+    /**
+     * Apply filters to the query.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function applyFiltersToQuery(Builder $query)
+    {
+        // Add your custom filter logic here
+        DummyFilters
+        return $query;
+    }
+
+}
